@@ -1,15 +1,13 @@
 .card-read-borrowing {
     width: 30rem;
-    height: 50rem;
+    height: 40rem;
+    position: relative;
 }
 
-.body-title-read-borrowing {
-    height: 20px;
-}
 
 .title-read-borrowing {
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
     color: #6247AA;
 }
 
@@ -18,6 +16,15 @@
     padding-top: 2rem;
 }
 
-.botao-download a {
-    justify-content: flex-end;
+.botao-download {
+    position: absolute;
+    top: 1rem; 
+    right: 1rem; 
+}
+
+.botao-download-item {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 1rem;
 }

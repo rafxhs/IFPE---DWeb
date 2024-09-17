@@ -12,7 +12,6 @@ if (!$emprestimo) {
     die("Empréstimo não encontrado.");
 }
 
-// Obter todos os empréstimos para associar aos livros
 $stmt = $pdo->query("SELECT * FROM clientes");
 $clientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

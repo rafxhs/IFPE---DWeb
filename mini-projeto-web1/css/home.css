@@ -174,3 +174,8 @@
         align-items: center;
     }
 }
+
+.bg-custom {
+    background-color: #6247AA !important;
+    height: 200px;
+}

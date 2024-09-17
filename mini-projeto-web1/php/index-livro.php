@@ -5,7 +5,6 @@ require_once 'authenticate.php';
 // Executa a consulta para obter todos os livros
 $stmt = $pdo->query("SELECT * FROM livros");
 
-// Recupera todos os resultados da consulta como um array associativo
 $livros = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 

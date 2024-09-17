@@ -3,9 +3,9 @@
 
 require_once 'db.php';
 require_once 'authenticate.php';
-// Executa a consulta para obter todos os alunos
+// Executa a consulta para obter todos os clientes
 $stmt = $pdo->query("SELECT * FROM clientes");
-// Recupera todos os resultados da consulta como um array associativo
+
 $clientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 

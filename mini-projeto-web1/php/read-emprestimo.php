@@ -19,6 +19,7 @@ $stmt = $pdo->prepare("
     LEFT JOIN funcionarios ON emprestimos.funcionario_id = funcionarios.id 
     WHERE emprestimos.id = ?
 ");
+
 $stmt->execute([$id]);
 $emprestimo = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -39,9 +40,9 @@ if (!$emprestimo) {
         <div class="card card-read-borrowing">
             <?php if ($emprestimo): ?>
                 <div class="botao-download">
-                    <a href="export-emprestimo-pdf.php?id=<?= $emprestimo['emprestimo_id'] ?>" target="_blank">
-                        <i class="fa-solid fa-cloud-arrow-down fa-xl" style="color: #6147aa;"></i>
-                    </a>
+                        <a class="botao-download-item" href="export-emprestimo-pdf.php?id=<?= $emprestimo['emprestimo_id'] ?>" target="_blank">
+                            <i class="fa-solid fa-cloud-arrow-down fa-xl" style="color: #6147aa;"></i>
+                        </a>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title title-read-borrowing"> Biblioteca Dream - Empréstimo de Livro</h5>

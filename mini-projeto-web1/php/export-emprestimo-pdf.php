@@ -50,17 +50,51 @@ $html = '
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Dream - Empréstimo</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Biblioteca Dream - Empréstimo de Livro</h1>
-    <p><strong>Código - Empréstimo:</strong> ' . $emprestimo['id'] . '</p>
-    <p><strong>Funcionário:</strong> ' . $funcionario['nome']. '</p>
-    <p><strong>Cliente:</strong> ' . $cliente['nome'] . '</p>
-    <p><strong>Data do Empréstimo:</strong> ' . $emprestimo['data_emprestimo'] . '</p>
-    <p><strong>Data de Devolução:</strong> ' . $emprestimo['data_devolucao'] . '</p>
+
+    <style>
+
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .pdf-title {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6247AA;
+        }
+
+        .pdf-items {
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+
+        .pdf-title-item {
+            color: #6247AA;
+        }
+
+    </style>
+    
+    <div class="pdf-title">
+        <h1> Biblioteca Dream - Empréstimo de Livro</h1>
+    </div>
+
+    <div class="pdf-items">
+        <p><strong class="pdf-title-item">Código - Empréstimo:</strong> ' . $emprestimo['id'] . '</p>
+        <p><strong class="pdf-title-item">Funcionário:</strong> ' . $funcionario['nome']. '</p>
+        <p><strong class="pdf-title-item">Cliente:</strong> ' . $cliente['nome'] . '</p>
+        <p><strong class="pdf-title-item">Data do Empréstimo:</strong> ' . $emprestimo['data_emprestimo'] . '</p>
+        <p><strong class="pdf-title-item">Data de Devolução:</strong> ' . $emprestimo['data_devolucao'] . '</p>
+    </div>
 </body>
 </html>';
 
