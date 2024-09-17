@@ -1,0 +1,14 @@
+.card-read-staff {
+    width: 25rem;
+    height: 30rem;
+}
+
+.title-read-staff {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.botao-read-staff {
+    margin-left: auto; 
+    padding-top: 2rem;
+}
