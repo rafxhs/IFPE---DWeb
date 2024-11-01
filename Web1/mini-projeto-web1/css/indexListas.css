@@ -1,0 +1,73 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+table {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+caption .table-title {
+    display: flex;
+    justify-content: center;
+    color: #6147aaab;
+    margin-top: 10%;
+}
+
+.titulo-index {
+    color: #6247AA;
+}
+
+.button-add {
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.btn-bd-primary {
+    background-color: #6147aa; 
+    color: #fff; 
+    border-color: #6147aa; 
+  }
+  
+  .btn-bd-primary:hover {
+    color: #fff;
+    background-color: #C19EE0;
+    border-color: #C19EE0; 
+  }
+  
+  .btn-bd-primary a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .btn-bd-primary a:hover {
+    color: inherit; 
+  }
+
+.index-table-thead-items {
+    text-align: center;  
+    padding: 0;
+
+}
+
+.index-table-body-items {
+    text-align: center;  
+    padding: 0;
+}
+
+  .icon-cloud-moon {
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icon-cloud-moon a {
+    color: #6247AA;
+}
+
+.icon-cloud-moon a:hover {
+    color: #C19EE0;
+}

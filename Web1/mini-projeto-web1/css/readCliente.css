@@ -1,0 +1,14 @@
+.card-read-client {
+    width: 25rem;
+    height: 30rem;
+}
+
+.title-read-client {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.botao-read-client {
+    margin-left: auto; 
+    padding-top: 2rem;
+}

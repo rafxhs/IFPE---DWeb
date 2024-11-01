@@ -1,0 +1,95 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+}
+
+.content-title1 {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.content-form1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.content-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    min-height: 60vh;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 4px 16px #6147aaab;
+}
+
+.titulo-create {
+    color: #6247AA;
+}
+
+input,
+button {
+    border-radius: 5px;
+}
+
+input {
+
+    background-color: #DFDEE8;
+
+}
+
+.campo {
+    padding: 15px;
+    width: 100%;
+}
+
+.campo label {
+    margin-bottom: 0.1em;
+    color: #111;
+    display: block;
+}
+
+.campo input[type="text"],
+.campo input[type="date"] {
+    padding: 0.6em;
+    border: 1px solid #DEC9E9;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 100% ;
+}
+
+.campo button {
+
+    width: 100%;
+}
+
+.botao1 {
+    font-size: 1.2em;
+    background: #6247AA;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.botao1:hover {
+    font-size: 1.2em;
+    color: #111;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background: #C19EE0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); /*Caso fosse necessário que a sombra desaparecesse quando passar o mouse por cima, utiliza-se "inset" antes dos pixels*/
+    text-shadow: none;
+}

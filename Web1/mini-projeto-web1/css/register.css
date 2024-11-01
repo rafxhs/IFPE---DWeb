@@ -1,0 +1,104 @@
+.main-register {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.content-register-title1 {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.form-register {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.content-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 620px;
+    min-height: 60vh;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 4px 16px #6147aaab;
+}
+
+.titulo-register {
+    color: #6247AA;
+}
+
+input,
+button {
+    border-radius: 5px;
+}
+
+.campo-register  {
+    width: 100%;
+    width: 400px;
+    min-height: 5vh;
+    padding: 15px;
+
+    button {
+        min-height: 5vh;
+    }
+
+    p {
+
+        color: #787878;
+    }
+
+    p a {
+
+        justify-items: left;
+    }
+}
+
+.campo-register  label {
+    margin-bottom: 0.1em;
+    color: #111;
+    display: block;
+}
+
+.campo-register  input[type="text"],
+.campo-register  input[type="password"],
+.campo-register  input[type="submit"] {
+    padding: 0.6em;
+    border: 1px solid #DEC9E9;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 100% ;
+}
+
+.campo-register  button {
+
+    width: 100%;
+}
+
+.botao-register  {
+    font-size: 1.2em;
+    background: #6247AA;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.botao-register:hover {
+    font-size: 1.2em;
+    color: #111;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background: #C19EE0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); /*Caso fosse necessário que a sombra desaparecesse quando passar o mouse por cima, utiliza-se "inset" antes dos pixels*/
+    text-shadow: none;
+}
