@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Publisher;
+use Illuminate\Http\Request;
 
 class PublisherController extends Controller
 {
@@ -31,6 +31,7 @@ class PublisherController extends Controller
     {
         $request->validate([
             'name' => 'required|string|unique:publishers|max:255',
+            'address' => 'nullable|string|max:255',
         ]);
 
         Publisher::create($request->all());
@@ -61,6 +62,7 @@ class PublisherController extends Controller
     {
         $request->validate([
             'name' => 'required|string|unique:publishers,name,' . $publisher->id . '|max:255',
+            'address' => 'nullable|string|max:255',
         ]);
 
         $publisher->update($request->all());
@@ -71,8 +73,12 @@ class PublisherController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Publisher $publisher)
     {
-        //
+        $publisher->books()->delete();
+
+        $publisher->delete();
+
+        return redirect()->route('publishers.index')->with('success', 'Editora excluída com sucesso.');
     }
 }
